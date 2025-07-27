@@ -14,5 +14,5 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       # testing 'act' so I want to create a pull-request
       # run any `bun` or `bunx` command
-      - run: bun install
+      - run: bun install --force
       - run: bun lint
