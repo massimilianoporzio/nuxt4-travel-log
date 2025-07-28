@@ -4,8 +4,13 @@
  */
 <template>
   <div class="navbar bg-accent text-accent-content">
-    <button class="btn btn-ghost text-xl">
-      daisyUI
-    </button>
+    <div class="navbar-start">
+      <NuxtLink to="/" class="btn btn-ghost text-xl text-bold">
+        <strong>Travel Log</strong>
+      </NuxtLink>
+    </div>
+    <div class="navbar-end">
+      <a class="btn">Sign In</a>
+    </div>
   </div>
 </template>
