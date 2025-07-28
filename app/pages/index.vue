@@ -7,7 +7,7 @@
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">
-          Hello there
+          Hello there! uffa
         </h1>
         <p class="py-6">
           Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
