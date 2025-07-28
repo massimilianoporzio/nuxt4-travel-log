@@ -10,7 +10,7 @@
       </NuxtLink>
     </div>
     <div class="navbar-end">
-      <a class="btn">Sign In</a>
+      <a class="btn"> Sign In with Github <Icon name="tabler:brand-github" size="24" /></a>
     </div>
   </div>
 </template>
