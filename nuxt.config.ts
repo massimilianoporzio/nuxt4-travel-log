@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         const originalInvalidateModule = server.moduleGraph.invalidateModule;
         server.moduleGraph.invalidateModule = function (mod, invalidatedModules = new Set(), timestamp = Date.now()) {
           if (mod?.file?.includes("pages/")) {
-            console.log("🔥 Force reload for page file:", mod.file);
+            console.warn("🔥 Force reload for page file:", mod.file);
             server.ws.send({
               type: "full-reload",
             });
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         // JA ページファイルの場合は強制的にフルリロードを送信
         // EN Force full reload on page file changes
         if (ctx.file.includes("pages/")) {
-          console.log("🔥 Page file changed, forcing full reload:", ctx.file);
+          console.warn("🔥 Page file changed, forcing full reload:", ctx.file);
           ctx.server.ws.send({
             type: "full-reload",
           });
