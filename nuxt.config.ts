@@ -54,6 +54,10 @@ export default defineNuxtConfig({
     }],
 
   },
+  // colorMode
+  colorMode: {
+    dataValue: "theme",
+  },
   css: ["~/assets/app.css"],
 
 });
