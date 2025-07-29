@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2025 Massimiliano Porzio
+ *   All rights reserved.
+ */
 // @ts-check
 import antfu from "@antfu/eslint-config";
 
