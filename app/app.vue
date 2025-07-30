@@ -3,14 +3,7 @@
  *   All rights reserved.
  */
 <script setup lang="ts">
-import { configure, getConsoleSink } from "@logtape/logtape";
-
-await configure({
-  sinks: { console: getConsoleSink() },
-  loggers: [
-    { category: "my-app", lowestLevel: "debug", sinks: ["console"] },
-  ],
-});
+logger.log("app loaded");
 </script>
 
 <template>
