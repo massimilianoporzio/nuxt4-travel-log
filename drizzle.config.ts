@@ -13,7 +13,7 @@ export default defineConfig({
   dialect: "turso",
   casing: "snake_case",
   dbCredentials: {
-    url: env.TURSO_DATABASE_URL,
+    url: env.NODE_ENV === "development" ? "./local.db" : env.TURSO_DATABASE_URL,
     authToken: env.NODE_ENV === "development" ? undefined : env.TURSO_AUTH_TOKEN,
   },
 });

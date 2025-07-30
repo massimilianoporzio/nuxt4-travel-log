@@ -23,5 +23,5 @@ logs
 .env.*
 !.env.example
 
-#local db
+#local db 
 .local.db*
