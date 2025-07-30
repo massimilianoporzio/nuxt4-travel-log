@@ -8,8 +8,7 @@ import { Database } from "bun:sqlite";
 import { drizzle as drizzleBunSQLite } from "drizzle-orm/bun-sqlite";
 import { drizzle } from "drizzle-orm/libsql";
 
-import env from "~/lib/env";
-
+import env from "../env";
 import * as schema from "./schema";
 
 // eslint-disable-next-line import/no-mutable-exports
