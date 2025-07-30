@@ -5,6 +5,7 @@
       "name": "nuxt-app",
       "dependencies": {
         "@libsql/client": "^0.15.10",
+        "@logtape/logtape": "^1.0.4",
         "@nuxt/eslint": "1.7.1",
         "@nuxt/icon": "1.15.0",
         "@nuxtjs/color-mode": "3.5.2",
@@ -284,6 +285,8 @@
     "@libsql/linux-x64-musl": ["@libsql/linux-x64-musl@0.5.17", "", { "os": "linux", "cpu": "x64" }, "sha512-FvSpWlwc+dIeYIFYlsSv+UdQ/NiZWr+SstwVji+QZ//8NnvzwWQU9cgP+Vpps6Qiq4jyYQm9chJhTYOVT9Y3BA=="],
 
     "@libsql/win32-x64-msvc": ["@libsql/win32-x64-msvc@0.5.17", "", { "os": "win32", "cpu": "x64" }, "sha512-f5bGH8+3A5sn6Lrqg8FsQ09a1pYXPnKGXGTFiAYlfQXVst1tUTxDTugnuWcJYKXyzDe/T7ccxyIZXeSmPOhq8A=="],
+
+    "@logtape/logtape": ["@logtape/logtape@1.0.4", "", {}, "sha512-YvNVrXIxVpnY528zoiEjX8PqTfr0UCtKXyssvaWL8AE+OByFTCooKuKMdPlm6g65YUI9fPXrHn4UnogSskABnA=="],
 
     "@mapbox/node-pre-gyp": ["@mapbox/node-pre-gyp@2.0.0", "", { "dependencies": { "consola": "^3.2.3", "detect-libc": "^2.0.0", "https-proxy-agent": "^7.0.5", "node-fetch": "^2.6.7", "nopt": "^8.0.0", "semver": "^7.5.3", "tar": "^7.4.0" }, "bin": { "node-pre-gyp": "bin/node-pre-gyp" } }, "sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg=="],
 
