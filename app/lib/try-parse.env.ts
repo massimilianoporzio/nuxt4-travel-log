@@ -5,7 +5,10 @@
 /* eslint-disable node/no-process-env */
 import type { ZodObject, ZodRawShape } from "zod";
 
+import { getLogger } from "@logtape/logtape";
 import { ZodError } from "zod";
+
+const logger = getLogger(["Tavel Log", "Env"]);
 
 export default function tryParseEnv<T extends ZodRawShape>(
   EnvSchema: ZodObject<T>,
@@ -25,7 +28,8 @@ export default function tryParseEnv<T extends ZodRawShape>(
       throw e;
     }
     else {
-      console.error(error);
+      // console.error(error);
+      logger.error`${error}!`;
     }
   }
 }
