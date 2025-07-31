@@ -35,7 +35,6 @@
     "zod": "^4.0.14"
   },
   "devDependencies": {
-    "@3c1u/bun-run-all": "^0.1.2",
     "@antfu/eslint-config": "^5.0.0",
     "@iconify-json/tabler": "^1.2.20",
     "drizzle-kit": "^0.31.4",

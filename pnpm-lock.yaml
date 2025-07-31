@@ -63,9 +63,6 @@ importers:
         specifier: ^4.0.14
         version: 4.0.14
     devDependencies:
-      '@3c1u/bun-run-all':
-        specifier: ^0.1.2
-        version: 0.1.2
       '@antfu/eslint-config':
         specifier: ^5.0.0
         version: 5.0.0(@vue/compiler-sfc@3.5.18)(eslint-plugin-format@1.0.1(eslint@9.32.0(jiti@2.5.1)))(eslint@9.32.0(jiti@2.5.1))(typescript@5.8.3)
@@ -86,10 +83,6 @@ importers:
         version: 16.1.2
 
 packages:
-
-  '@3c1u/bun-run-all@0.1.2':
-    resolution: {integrity: sha512-S3VXncToBuhrSJZXUATv5Owk6s4e/qPoTv8nvOCMQWS7F8Ne33WWBpTNrbFYBIoIJHOm1UwsCRuP2FO9p6xcUw==}
-    hasBin: true
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -6075,12 +6068,6 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
-
-  '@3c1u/bun-run-all@0.1.2':
-    dependencies:
-      commander: 11.1.0
-      minimatch: 9.0.5
-      shell-quote: 1.8.3
 
   '@ampproject/remapping@2.3.0':
     dependencies:
