@@ -6,12 +6,21 @@
 import { createAuthClient } from "better-auth/client";
 
 const colorMode = useColorMode();
-const authClient = createAuthClient();
+const authClient = createAuthClient(
+
+);
 
 async function signIn() {
   await authClient.signIn.social({
+    fetchOptions: {
+      timeout: 5000,
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+      },
+    },
     provider: "github",
     callbackURL: "/dashboard",
+
   });
 }
 const buttonClass = computed(() => {
@@ -20,7 +29,7 @@ const buttonClass = computed(() => {
 </script>
 
 <template>
-  <button :class="buttonClass" @click.prevent="signIn">
+  <button :class="buttonClass" @click="signIn">
     Sign In with Github <Icon name="tabler:brand-github" size="24" />
   </button>
 </template>

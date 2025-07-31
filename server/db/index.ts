@@ -8,8 +8,7 @@
 import { createClient } from "@libsql/client";
 import { drizzle } from "drizzle-orm/libsql";
 
-import { logger } from "@/utils/logger";
-
+import { logger } from "../../app/utils/logger";
 import env from "../env";
 import * as schema from "./schema";
 
@@ -31,7 +30,10 @@ if (env.NODE_ENV === "production") {
 else {
   // Use local SQLite
   const client = createClient({ url: "file:local.db" });
-  db = drizzle(client);
+  db = drizzle(client, {
+    casing: "snake_case",
+    schema,
+  });
 
   logger.log ("Connected to local SQLite (development) with sqlite3.");
 }
