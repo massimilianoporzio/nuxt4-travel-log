@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "postinstall": "bunx nuxi@latest prepare",
+    "postinstall": "nuxt prepare",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint  .",
@@ -28,6 +28,7 @@
     "drizzle-orm": "^0.44.4",
     "eslint": "^9.32.0",
     "nuxt": "^4.0.2",
+    "sqlite3": "^5.1.7",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1",
@@ -43,6 +44,6 @@
     "lint-staged": "^16.1.2"
   },
   "lint-staged": {
-    "*": "bun lint"
+    "*": "pnpm lint"
   }
 }

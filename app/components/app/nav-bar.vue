@@ -11,7 +11,7 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <a class="btn"> Sign In with Github <Icon name="tabler:brand-github" size="24" /></a>
+      <AuthButton />
     </div>
   </div>
 </template>

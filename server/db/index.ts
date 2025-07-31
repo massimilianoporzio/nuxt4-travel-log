@@ -4,8 +4,8 @@
  */
 
 // Per SQLite con Bun
-import { Database } from "bun:sqlite";
-import { drizzle as drizzleBunSQLite } from "drizzle-orm/bun-sqlite";
+
+import { createClient } from "@libsql/client";
 import { drizzle } from "drizzle-orm/libsql";
 
 import { logger } from "@/utils/logger";
@@ -14,7 +14,7 @@ import env from "../env";
 import * as schema from "./schema";
 
 // eslint-disable-next-line import/no-mutable-exports
-let db: ReturnType<typeof drizzle> | ReturnType<typeof drizzleBunSQLite>;
+let db: ReturnType<typeof drizzle>;
 
 if (env.NODE_ENV === "production") {
   // Use Turso/libSQL
@@ -26,13 +26,14 @@ if (env.NODE_ENV === "production") {
     casing: "snake_case",
     schema,
   });
-  logger.info("Connected to Turso/libSQL in production with Bun.");
+  logger.info("Connected to Turso/libSQL in production.");
 }
 else {
   // Use local SQLite
-  const sqlite = new Database("./local.db");
-  db = drizzleBunSQLite(sqlite, { schema });
-  logger.info ("Connected to local SQLite (development) with Bun.");
+  const client = createClient({ url: "file:local.db" });
+  db = drizzle(client);
+
+  logger.log ("Connected to local SQLite (development) with sqlite3.");
 }
 
 export default db;

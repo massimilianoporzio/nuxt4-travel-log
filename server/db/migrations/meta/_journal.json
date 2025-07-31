@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1753867395403,
-      "tag": "0000_amazing_havok",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1753880641920,
-      "tag": "0001_cloudy_vertigo",
+      "when": 1753954150837,
+      "tag": "0000_illegal_spectrum",
       "breakpoints": true
     }
   ]
