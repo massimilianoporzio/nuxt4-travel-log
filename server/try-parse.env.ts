@@ -7,9 +7,7 @@ import type { ZodObject, ZodRawShape } from "zod";
 
 import { ZodError } from "zod";
 
-import { logger } from "../utils/logger";
-
-;
+import { logger } from "../app/utils/logger";
 
 export default function tryParseEnv<T extends ZodRawShape>(
   EnvSchema: ZodObject<T>,

@@ -5,11 +5,11 @@
 import "dotenv/config";
 import { defineConfig } from "drizzle-kit";
 
-import env from "./app/lib/env";
+import env from "./server/env";
 
 export default defineConfig({
-  out: "./app/lib/db/migrations",
-  schema: "./app/lib/db/schema/index.ts",
+  out: "./server/db/migrations",
+  schema: "./server/db/schema/index.ts",
   dialect: "turso",
   casing: "snake_case",
   dbCredentials: {

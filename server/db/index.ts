@@ -8,12 +8,13 @@ import { Database } from "bun:sqlite";
 import { drizzle as drizzleBunSQLite } from "drizzle-orm/bun-sqlite";
 import { drizzle } from "drizzle-orm/libsql";
 
-import { logger } from "../../utils/logger";
+import { logger } from "@/utils/logger";
+
 import env from "../env";
 import * as schema from "./schema";
 
 // eslint-disable-next-line import/no-mutable-exports
-let db;
+let db: ReturnType<typeof drizzle> | ReturnType<typeof drizzleBunSQLite>;
 
 if (env.NODE_ENV === "production") {
   // Use Turso/libSQL
