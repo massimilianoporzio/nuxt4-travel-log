@@ -18,7 +18,7 @@ const imagePath = computed(() => "/images/login-image.jpg");
     Le classi del layout si occupano di centrare il contenuto e gestire
     l'altezza dello schermo, evitando conflitti e la barra di scroll.
   -->
-  <div class="flex  items-center justify-center">
+  <div class="flex items-center justify-center lg:-translate-y-16">
     <div class="w-full max-w-sm lg:max-w-4xl p-4">
       <!-- logo -->
       <div class="flex items-center justify-center gap-2 p-8">
@@ -136,7 +136,9 @@ const imagePath = computed(() => "/images/login-image.jpg");
 
           <!-- signup -->
           <div class="label justify-end">
-            <a class="link-hover link label-text-alt" href="signup.html">Create new account</a>
+            <a class="link-hover link label-text-alt" href="signup.html">
+              Don't have an account? <span class="font-bold text-white">Sign up!</span>
+            </a>
           </div>
           <!-- /signup -->
         </form>
