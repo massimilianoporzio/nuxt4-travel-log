@@ -7,6 +7,7 @@ logger.log("app loaded");
 </script>
 
 <template>
+  <NuxtLoadingIndicator />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
