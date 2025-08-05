@@ -51,7 +51,7 @@ const imagePath = computed(() => "/images/login-image.jpg");
       <div class="bg-base-100 grid lg:aspect-2/1 lg:grid-cols-2">
         <!-- image -->
         <figure class="bg-base-300 pointer-events-none object-cover max-lg:hidden">
-          <img :src="imagePath" alt="Login" class="h-full">
+          <img :src="imagePath" alt="Login" class="h-full w-full object-cover">
         </figure>
         <!-- /image -->
         <!-- form -->
@@ -105,7 +105,7 @@ const imagePath = computed(() => "/images/login-image.jpg");
           <!-- signup -->
           <div class="label justify-end">
             <a class="link-hover link label-text-alt" href="signup.html">
-              Don't have an account? <span class="font-bold text-white">Sign up!</span>
+              Don't have an account? <span class="font-bold">Sign up!</span>
             </a>
           </div>
           <!-- /signup -->
